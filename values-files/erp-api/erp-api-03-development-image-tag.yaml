@@ -1,0 +1,6 @@
+
+erp-api:
+  pods:
+    image:
+      tag: "v0.0.1"
+# Sat May  4 04:47:37 UTC 2024

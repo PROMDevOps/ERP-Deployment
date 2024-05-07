@@ -1,0 +1,24 @@
+
+erp-ui:
+  enabled: true
+  nameOverride: erp-ui
+
+  ingress:
+    enabled: false
+
+  podDisruptionBudget:
+    enabled: false
+
+  pods:
+    controller: deployment
+
+    image:
+      name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/erp-ui
+
+  service:
+    enabled: true
+    ports:
+      - port: 80
+        targetPort: 80
+        protocol: TCP
+        name: http

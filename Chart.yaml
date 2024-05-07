@@ -1,0 +1,43 @@
+apiVersion: v2
+name: helm-erp
+description: A Helm chart for Prom ERP
+
+type: application
+
+version: 1.0.0
+
+appVersion: "1.0"
+
+dependencies:
+  ### Kong ###
+  #- name: kong
+  #  version: "2.22.0"
+  #  repository: "https://charts.konghq.com"
+  #  condition: kong.enabled
+
+  #- name: "generic-app"
+  #  alias: konga
+  #  condition: konga.enabled
+  #  repository: "https://charts.visonneau.fr/"
+  #  version: "0.0.14"
+
+  ### pgSQL ###
+  - name: "postgresql"
+    alias: postgresql-erp
+    condition: postgresql-erp.enabled
+    repository: "https://charts.bitnami.com/bitnami"
+    version: "15.2.9"
+
+  ### ERP UI ###
+  - name: "generic-app"
+    alias: erp-ui
+    condition: payment-ui.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.15"
+
+  ### ERP service ###
+  - name: "generic-app"
+    alias: erp-api
+    condition: erp-api.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.15"
