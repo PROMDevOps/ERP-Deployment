@@ -40,4 +40,4 @@ dependencies:
     alias: erp-api
     condition: erp-api.enabled
     repository: "https://charts.visonneau.fr/"
-    version: "0.0.15"
+    version: "0.0.14"
