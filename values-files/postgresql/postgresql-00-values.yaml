@@ -1,0 +1,8 @@
+postgresql-erp:
+  enabled: true
+  fullnameOverride: postgresql-erp
+  auth:
+    database: erp
+    existingSecret: erp-postgres-secret
+    secretKeys:
+      adminPasswordKey: adminPasswordKey
