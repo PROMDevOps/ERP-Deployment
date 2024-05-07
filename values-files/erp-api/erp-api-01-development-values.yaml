@@ -9,3 +9,30 @@ erp-api:
       requests:
         cpu: 50m
         memory: 100Mi
+
+    env:
+      # To solve ulimit(128) issue
+      - name: DOTNET_USE_POLLING_FILE_WATCHER
+        value: "true"
+
+      - name: ASPNETCORE_ENVIRONMENT
+        value: "Development"
+
+      - name: IsDev
+        value: "true"
+
+      - name: PostgreSQL_Host
+        value: "postgresql-erp"
+
+      - name: PostgreSQL_Database
+        value: "erp"
+
+      - name: PostgreSQL_User
+        value: "postgres"
+
+      - name: PostgreSQL_Password
+        valueFrom:
+          secretKeyRef:
+            name: erp-postgres-secret 
+            key: adminPasswordKey
+            optional: false
