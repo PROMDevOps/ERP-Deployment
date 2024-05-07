@@ -33,7 +33,7 @@ dependencies:
     alias: erp-ui
     condition: payment-ui.enabled
     repository: "https://charts.visonneau.fr/"
-    version: "0.0.15"
+    version: "0.0.14"
 
   ### ERP service ###
   - name: "generic-app"
