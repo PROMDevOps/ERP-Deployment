@@ -1,3 +1,4 @@
 ---
 envAlias: production
 domainErpUI: sales.prom.co.th
+domainErpAPI: sales-api.prom.co.th
