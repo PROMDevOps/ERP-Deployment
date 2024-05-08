@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: erp-api-cert
+spec:
+  secretName: erp-api-cert
+  dnsNames:
+    - {{ .Values.domainErpAPI }}
+  issuerRef:
+    name: lets-encrypt-issuer-prod
+    kind: ClusterIssuer
+    group: cert-manager.io
