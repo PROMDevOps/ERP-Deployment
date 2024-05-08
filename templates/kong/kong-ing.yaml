@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: erp-api-ing
+  name: kong-ing
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: HTTP
 spec:
@@ -9,7 +9,7 @@ spec:
   tls:
     - hosts:
       - {{ .Values.domainErpAPI }}
-      secretName: erp-api-cert
+      secretName: kong-cert
   rules:
     - host: {{ .Values.domainErpAPI }}
       http:
@@ -18,6 +18,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: promerp-{{ .Values.envAlias }}-erp-api
+                name: kong-proxy
                 port:
                   number: 80
