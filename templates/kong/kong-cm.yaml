@@ -15,7 +15,6 @@ data:
         strip_path: false
         paths:
         - /v1/
-        - /
 
     plugins:
     - name: http-log
