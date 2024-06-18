@@ -4,6 +4,8 @@ metadata:
   name: erp-ui-ing
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: HTTP
+    nginx.ingress.kubernetes.io/proxy-body-size: 50m
+    nginx.org/client-max-body-size: 50m
 spec:
   ingressClassName: nginx
   tls:
