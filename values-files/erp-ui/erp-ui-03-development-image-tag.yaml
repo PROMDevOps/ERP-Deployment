@@ -2,4 +2,4 @@
 erp-ui:
   pods:
     image:
-      tag: "develop-c836982"
+      tag: "develop-d5a3d6c"
