@@ -15,6 +15,10 @@ data:
         strip_path: false
         paths:
         - /v1/
+      - name: promerp-api-swagger
+        strip_path: true
+        paths:
+        - /v1/
 
     plugins:
     - name: http-log
