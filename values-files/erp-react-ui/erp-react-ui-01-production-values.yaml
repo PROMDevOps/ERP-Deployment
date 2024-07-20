@@ -9,3 +9,7 @@ erp-react-ui:
       requests:
         cpu: 50m
         memory: 100Mi
+
+    env:
+      - name: HTTP_PORT
+        value: "80"
