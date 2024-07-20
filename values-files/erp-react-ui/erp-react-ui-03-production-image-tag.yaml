@@ -2,5 +2,4 @@
 erp-react-ui:
   pods:
     image:
-      tag: "v0.0.1"
-# Wed Apr  3 03:50:00 UTC 2024
+      tag: "main-4b77c4a"
