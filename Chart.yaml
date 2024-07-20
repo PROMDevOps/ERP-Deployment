@@ -25,7 +25,14 @@ dependencies:
   ### ERP UI ###
   - name: "generic-app"
     alias: erp-ui
-    condition: payment-ui.enabled
+    condition: erp-ui.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
+  ### ERP React UI ###
+  - name: "generic-app"
+    alias: erp-react-ui
+    condition: erp-react-ui.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 

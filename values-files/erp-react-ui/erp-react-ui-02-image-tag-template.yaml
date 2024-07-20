@@ -1,0 +1,5 @@
+
+erp-react-ui:
+  pods:
+    image:
+      tag: "<<image-tag>>"
