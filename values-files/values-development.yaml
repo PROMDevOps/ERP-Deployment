@@ -2,3 +2,4 @@
 envAlias: development
 domainErpUI: sales-dev.prom.co.th
 domainErpAPI: sales-api-dev.prom.co.th
+domainErpReactUI: sales-dev1.prom.co.th
