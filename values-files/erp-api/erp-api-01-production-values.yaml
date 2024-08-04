@@ -4,10 +4,10 @@ erp-api:
 
     resources:
       limits:
-        cpu: 100m
-        memory: 150Mi
+        cpu: 300m
+        memory: 350Mi
       requests:
-        cpu: 50m
+        cpu: 150m
         memory: 100Mi
 
     env:

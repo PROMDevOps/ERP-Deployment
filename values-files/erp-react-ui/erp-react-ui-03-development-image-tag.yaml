@@ -2,4 +2,4 @@
 erp-react-ui:
   pods:
     image:
-      tag: "develop-62bc1ad"
+      tag: "develop-df01ada"
