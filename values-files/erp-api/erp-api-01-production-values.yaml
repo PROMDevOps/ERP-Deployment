@@ -36,3 +36,10 @@ erp-api:
             name: erp-postgres-secret 
             key: adminPasswordKey
             optional: false
+
+      - name: ERP_EMAIL
+        valueFrom:
+          secretKeyRef:
+            name: api-secret
+            key: ERP_EMAIL
+            optional: false
