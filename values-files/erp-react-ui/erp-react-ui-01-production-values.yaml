@@ -16,3 +16,9 @@ erp-react-ui:
 
       - name: BASE_URL
         value: "https://sales-api.prom.co.th"
+
+      - name: REACT_APP_BASE_URL
+        value: "https://sales-api.prom.co.th"
+
+      - name: REACT_APP_WEB_BASE_URL
+        value: "https://sales.prom.co.th"
