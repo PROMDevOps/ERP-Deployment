@@ -2,4 +2,4 @@
 erp-react-ui:
   pods:
     image:
-      tag: "main-abae95c"
+      tag: "main-1ac5ab6"
