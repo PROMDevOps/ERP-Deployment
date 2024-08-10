@@ -13,3 +13,6 @@ erp-react-ui:
     env:
       - name: HTTP_PORT
         value: "80"
+
+      - name: BASE_URL
+        value: "https://sales-api-dev.prom.co.th"
