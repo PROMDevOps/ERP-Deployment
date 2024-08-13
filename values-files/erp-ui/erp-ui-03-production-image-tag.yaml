@@ -2,4 +2,4 @@
 erp-ui:
   pods:
     image:
-      tag: "main-991cbeb"
+      tag: "v1.0.1"
