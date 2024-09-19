@@ -2,4 +2,4 @@
 erp-api:
   pods:
     image:
-      tag: "develop-eb7ccaa"
+      tag: "develop-1c24168"
