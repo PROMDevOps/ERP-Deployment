@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: erp-account-ui-ing
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: HTTP
+    nginx.ingress.kubernetes.io/proxy-body-size: 50m
+    nginx.org/client-max-body-size: 50m
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+      - {{ .Values.domainErpAccountUI }}
+      secretName: erp-account-ui-cert
+  rules:
+    - host: {{ .Values.domainErpAccountUI }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: promerp-{{ .Values.envAlias }}-erp-account-ui
+                port:
+                  number: 80
