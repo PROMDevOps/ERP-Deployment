@@ -42,3 +42,10 @@ dependencies:
     condition: erp-api.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
+
+  ### ERP Account UI ###
+  - name: "generic-app"
+    alias: erp-account-ui
+    condition: erp-account-ui.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
