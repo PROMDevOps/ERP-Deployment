@@ -4,3 +4,4 @@ domainErpUI: sales1.prom.co.th
 domainErpAPI: sales-api.prom.co.th
 domainErpReactUI: sales.prom.co.th
 domainErpAccountUI: account.prom.co.th
+domainErpAccountAPI: account-api.prom.co.th

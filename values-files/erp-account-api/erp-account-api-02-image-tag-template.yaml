@@ -1,0 +1,5 @@
+
+erp-account-api:
+  pods:
+    image:
+      tag: "<<image-tag>>"
