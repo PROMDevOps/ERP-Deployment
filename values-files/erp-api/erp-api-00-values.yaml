@@ -12,12 +12,12 @@ erp-api:
   pods:
     controller: deployment
 
-    #livenessProbe:
-    #  httpGet:
-    #    path: /health
-    #    port: 8080
-    #  initialDelaySeconds: 20
-    #  periodSeconds: 5
+    livenessProbe:
+      httpGet:
+        path: /v1/api/Authorization/HealthCheck
+        port: 8080
+      initialDelaySeconds: 20
+      periodSeconds: 5
 
     image:
       name: asia-southeast1-docker.pkg.dev/promrub-personal-use/promrub/erp-service
