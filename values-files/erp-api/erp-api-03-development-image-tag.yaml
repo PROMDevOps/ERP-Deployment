@@ -2,4 +2,4 @@
 erp-api:
   pods:
     image:
-      tag: "develop-f8327b8"
+      tag: "main-cc5d316"
