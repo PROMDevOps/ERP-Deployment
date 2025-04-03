@@ -2,4 +2,4 @@
 erp-account-ui:
   pods:
     image:
-      tag: "v0.1.7"
+      tag: "main-50f1b14"
