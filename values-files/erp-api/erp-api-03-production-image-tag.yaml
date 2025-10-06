@@ -2,4 +2,4 @@
 erp-api:
   pods:
     image:
-      tag: "v1.4.22"
+      tag: "v1.4.23"
