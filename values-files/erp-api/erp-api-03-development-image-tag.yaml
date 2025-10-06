@@ -2,4 +2,4 @@
 erp-api:
   pods:
     image:
-      tag: "main-caada68"
+      tag: "develop-bde6476"
